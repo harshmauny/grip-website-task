@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { CountryDropdown } from 'react-country-region-selector';
+import axios from 'axios';
 import './Contact.css'
+
+
 export default function Contact() {
 
     const [email, setEmail] = useState("");
@@ -30,6 +33,20 @@ export default function Contact() {
             setInternship(value);
         }
 
+    }
+
+    const onSubmitHandler = (event, name, email, country, mobile, gender, internship) => {
+        event.preventDefault();
+        console.log(name, email, country, mobile, gender, internship)
+        const mydata = { name, email, country, mobile, gender, internship }
+        axios.post('http://localhost:3000/person/new', mydata)
+            .then(personDetail => {
+                var data = personDetail.data.person_data;
+                console.log(data)
+            })
+            .catch(err => {
+                console.log(err)
+            })
     }
 
     return (
@@ -109,7 +126,7 @@ export default function Contact() {
                         <input type="text" name="internship" className="form-control" placeholder="Preferred Internship Function" onChange={event => onChangeHandler(event)} />
                     </div>
                     <div className="submit-button">
-                        <button type="submit" className="submitBtn">Submit</button>
+                        <button type="submit" className="submitBtn" onClick={event => { onSubmitHandler(event, name, email, country, mobile, gender, internship) }}>Submit</button>
                     </div>
                 </form>
 
