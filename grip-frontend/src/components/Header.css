@@ -1,0 +1,8 @@
+img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    height: 100%;
+    float: left;
+    background: linear-gradient(to top, rgba(254, 254, 254, 0.4), rgba(250, 250, 250, 0));
+}
