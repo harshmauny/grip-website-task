@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from '../assets/Logo.png';
 import './Header.css';
 
 const Nav = styled.nav`
+  
   padding: 0 20px;
   height: 6rem;
   min-height: 9vh;
@@ -11,10 +13,12 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 `;
 
 const Logo = styled.h1`
-  font-size: 25px;
+  display:flex;
+  flex-direction:row;
   color: white;
 `;
 
@@ -33,12 +37,13 @@ const Menu = styled.ul`
 
 const Item = styled.li``;
 
-const Link = styled.a`
+const SLink = styled.a`
   color: white;
   text-decoration: none;
 
   :hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #767676;
   }
 `;
 
@@ -70,7 +75,7 @@ const Line = styled.span`
 const Overlay = styled.div`
   position: absolute;
   height: ${props => (props.open ? "91vh" : 0)};
-  width: 100vw;
+  width: 100%;
   background: #1c2022;
   transition: height 0.4s ease-in-out;
 
@@ -99,53 +104,81 @@ const OverlayMenu = styled.ul`
 `;
 
 export default function Header() {
-    const [toggle, toggleNav] = useState(false);
-    return (
-        <>
-            <Nav>
-                <Logo><img src={logo} alt="" /></Logo>
-                <Menu>
-                    <Item>
-                        <Link target="#" href="https://www.instagram.com/igor_dumencic/">
-                            About Us
-                        </Link>
-                    </Item>
-                    <Item>
-                        <Link target="#" href="https://www.behance.net/igordumencic">
-                            GRIP
-                        </Link>
-                    </Item>
-                    <Item>
-                        <Link target="#" href="https://github.com/Igor178">
-                            Contact Us
-                        </Link>
-                    </Item>
-                </Menu>
-                <NavIcon onClick={() => toggleNav(!toggle)}>
-                    <Line open={toggle} />
-                    <Line open={toggle} />
-                    <Line open={toggle} />
-                </NavIcon>
-            </Nav>
-            <Overlay open={toggle}>
-                <OverlayMenu open={toggle}>
-                    <Item>
-                        <Link target="#" href="https://www.instagram.com/igor_dumencic/">
-                            About US
-                        </Link>
-                    </Item>
-                    <Item>
-                        <Link target="#" href="https://www.behance.net/igordumencic">
-                            GRIP
-                        </Link>
-                    </Item>
-                    <Item>
-                        <Link target="#" href="https://github.com/Igor178">
-                            Contact Us
-                        </Link>
-                    </Item>
-                </OverlayMenu>
-            </Overlay>
-        </>
-    );
+  const [toggle, toggleNav] = useState(false);
+  return (
+    <div className="header">
+      <Nav>
+
+        <Logo>
+
+          <img className="item left" src={logo} alt="" />
+          <div className="item right">
+            <h2>TSF GRIP</h2>
+            <p style={{ color: '#777' }}>...inspiring, innovating, integrating</p>
+          </div>
+
+        </Logo>
+
+        <Menu>
+
+          <Item>
+            <Link className="mylink" to='/'>
+              <SLink target="#" href="#">
+                About Us
+              </SLink>
+            </Link>
+          </Item>
+          <Item>
+            <Link className="mylink" to='/grip'>
+              <SLink target="#" href="#">
+                GRIP
+            </SLink>
+            </Link>
+          </Item>
+          <Item>
+            <Link className="mylink" to='/contact'>
+              <SLink target="#" href="#">
+                Contact Us
+            </SLink>
+            </Link>
+          </Item>
+
+        </Menu>
+
+        <NavIcon onClick={() => toggleNav(!toggle)}>
+          <Line open={toggle} />
+          <Line open={toggle} />
+          <Line open={toggle} />
+        </NavIcon>
+
+      </Nav>
+      <Overlay open={toggle}>
+        <OverlayMenu open={toggle}>
+
+          <Item>
+            <Link onClick={() => toggleNav(!toggle)} className="mylink" to='/'>
+              <SLink target="#" href="#">
+                About Us
+              </SLink>
+            </Link>
+          </Item>
+          <Item>
+            <Link onClick={() => toggleNav(!toggle)} className="mylink" to='/grip'>
+              <SLink target="#" href="#">
+                GRIP
+            </SLink>
+            </Link>
+          </Item>
+          <Item>
+            <Link onClick={() => toggleNav(!toggle)} className="mylink" to='/contact'>
+              <SLink target="#" href="#">
+                Contact Us
+              </SLink>
+            </Link>
+          </Item>
+
+        </OverlayMenu>
+      </Overlay>
+    </div>
+  );
 };

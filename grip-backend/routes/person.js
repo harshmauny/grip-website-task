@@ -25,6 +25,7 @@ router.post('/new', (req, res, next) => {
         _id: new mongoose.Types.ObjectId(),
         name: req.body.name,
         mobile: req.body.mobile,
+        college: req.body.college,
         email: req.body.email,
         gender: req.body.gender,
         country: req.body.country,

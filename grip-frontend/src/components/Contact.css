@@ -1,3 +1,5 @@
+/* ---------------------------------------Contact & Address--------------------------------------- */
+
 .contact-info {
     display: flex;
     flex-direction: row;
@@ -27,6 +29,9 @@
     border-radius: 10px;
 }
 
+
+/* ---------------------------------------Interest Form--------------------------------------- */
+
 .title {
     text-align: center;
 }
@@ -49,6 +54,9 @@
     background-color: #04BDC9;
     color: white;
 }
+
+
+/* ---------------------------------------Media Queries--------------------------------------- */
 
 @media (max-width: 800px) {
     .contact-info {

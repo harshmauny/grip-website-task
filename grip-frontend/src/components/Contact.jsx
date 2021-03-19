@@ -13,6 +13,8 @@ export default function Contact() {
     const [country, setCountry] = useState("");
     const [gender, setGender] = useState("");
     const [internship, setInternship] = useState("");
+    const [error, setError] = useState('')
+    const [success, setSuccess] = useState('')
     const selectCountry = (val) => {
         setCountry(val)
     }
@@ -35,17 +37,19 @@ export default function Contact() {
 
     }
 
-    const onSubmitHandler = (event, name, email, country, mobile, gender, internship) => {
+    const onSubmitHandler = (event, name, email, country, college, mobile, gender, internship) => {
         event.preventDefault();
-        console.log(name, email, country, mobile, gender, internship)
-        const mydata = { name, email, country, mobile, gender, internship }
-        axios.post('http://localhost:3000/person/new', mydata)
+        console.log(name, email, country, college, mobile, gender, internship)
+        const mydata = { name, email, country, college, mobile, gender, internship }
+        axios.post('https://grip-tsf.herokuapp.com/person/new', mydata)
             .then(personDetail => {
                 var data = personDetail.data.person_data;
+                setSuccess("form submitted!")
                 console.log(data)
             })
             .catch(err => {
-                console.log(err)
+                setError("Mobile or Email already exists or empty fields!")
+                console.log(err.error)
             })
     }
 
@@ -53,6 +57,7 @@ export default function Contact() {
         <div className="container">
 
             <div className="contact-info">
+
                 <div className="address">
                     <h3>Address</h3>
                     <p>THE HANGAR, NUS ENTERPRISE</p>
@@ -63,9 +68,11 @@ export default function Contact() {
                     <p>+65-8402-8590</p>
                     <p>info@thesparksfoundation.sg</p>
                 </div>
+
             </div>
 
             <div className="interest-form">
+
                 <div className="title">
                     <h2>Interest Form</h2>
                 </div>
@@ -125,12 +132,17 @@ export default function Contact() {
                     <div className="form-group">
                         <input type="text" name="internship" className="form-control" placeholder="Preferred Internship Function" onChange={event => onChangeHandler(event)} />
                     </div>
+
                     <div className="submit-button">
-                        <button type="submit" className="submitBtn" onClick={event => { onSubmitHandler(event, name, email, country, mobile, gender, internship) }}>Submit</button>
+                        <button type="submit" className="submitBtn" onClick={event => { onSubmitHandler(event, name, email, country, college, mobile, gender, internship) }}>Submit</button>
                     </div>
+
                 </form>
+                {<><p style={{ color: 'red', fontWeight: '800', marginTop: "1rem" }}>{error}</p></>}
+                {<><p style={{ color: 'green', fontWeight: '800', marginTop: "1rem" }}>{success}</p></>}
 
             </div>
+
         </div>
     )
 }

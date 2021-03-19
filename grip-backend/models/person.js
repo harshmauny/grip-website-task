@@ -11,6 +11,7 @@ const PersonSchema = mongoose.Schema({
         match: /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
     },
     gender: { type: String, required: true },
+    college: { type: String, required: true },
     country: { type: String, required: true },
     internship: { type: String, required: true },
     date: { type: Date, default: Date.now }

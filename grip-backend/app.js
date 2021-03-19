@@ -4,11 +4,11 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv')
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 const person = require('./routes/person');
 
-dotenv.config()
+dotenv.config();
 app.use(morgan('dev'));
 // app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
