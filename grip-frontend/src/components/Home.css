@@ -173,7 +173,7 @@
     }
     .extra-info-tiles {
         flex-direction: column;
-        margin: 2rem 0;
+        margin: 2rem auto;
     }
     .tile {
         margin: 1rem 0 0;

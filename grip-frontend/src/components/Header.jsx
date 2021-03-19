@@ -13,7 +13,9 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  margin: 0px;
+  width:100%;
+  box-shadow: 0 8px 6px -6px #999;
 `;
 
 const Logo = styled.h1`
@@ -73,6 +75,7 @@ const Line = styled.span`
 `;
 
 const Overlay = styled.div`
+  z-index:100;
   position: absolute;
   height: ${props => (props.open ? "91vh" : 0)};
   width: 100%;
@@ -109,7 +112,7 @@ export default function Header() {
     <div className="header">
       <Nav>
 
-        <Logo>
+        <Link to="/"><Logo>
 
           <img className="item left" src={logo} alt="" />
           <div className="item right">
@@ -118,7 +121,7 @@ export default function Header() {
           </div>
 
         </Logo>
-
+        </Link>
         <Menu>
 
           <Item>

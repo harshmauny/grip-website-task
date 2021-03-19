@@ -51,7 +51,7 @@ export default function Grip() {
 
                     <div className="guidance">
 
-                        <h2>Guidance/Mentoring</h2>
+                        <h2>Guidance</h2>
                         {guidance.map((guide) => {
                             return (<div className="guidance-block" key={guide.id}>
                                 <div className="guidance-heading">
