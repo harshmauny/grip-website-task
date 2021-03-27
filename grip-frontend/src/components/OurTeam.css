@@ -1,0 +1,48 @@
+.our-team-heading {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.team-card {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.team-card-left {
+    padding: 1rem;
+    width: 100%;
+    flex: 1.5;
+}
+
+.team-card-right {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-card-left .intro {
+    color: #737e8b;
+}
+
+.designation {
+    margin-top: 1rem;
+}
+
+.designation h6 {
+    color: #737e8b;
+}
+
+.team-card-right img {
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+}
+
+@media all and (max-width: 768px) {
+    .team-card {
+        flex-direction: column-reverse;
+    }
+}

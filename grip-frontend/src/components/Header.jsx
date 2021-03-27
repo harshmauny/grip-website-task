@@ -27,8 +27,8 @@ const Menu = styled.ul`
   list-style: none;
   display: flex;
 
-  li:nth-child(2) {
-    margin: 0px 20px;
+  li {
+    margin: 0px 15px;
   }
 
   @media (max-width: 768px) {
@@ -138,6 +138,13 @@ export default function Header() {
             </Link>
           </Item>
           <Item>
+            <Link className="mylink" to='/ourteam'>
+              <SLink target="#" href="#">
+                Our Team
+            </SLink>
+            </Link>
+          </Item>
+          <Item>
             <Link className="mylink" to='/contact'>
               <SLink target="#" href="#">
                 Contact Us
@@ -169,6 +176,13 @@ export default function Header() {
               <SLink target="#" href="#">
                 GRIP
             </SLink>
+            </Link>
+          </Item>
+          <Item>
+            <Link onClick={() => toggleNav(!toggle)} className="mylink" to='/ourteam'>
+              <SLink target="#" href="#">
+                Our Team
+              </SLink>
             </Link>
           </Item>
           <Item>

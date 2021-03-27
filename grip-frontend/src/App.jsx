@@ -8,6 +8,7 @@ import Home from './components/Home'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Grip from './components/Grip'
+import OurTeam from './components/OurTeam'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/ourteam" component={OurTeam} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/grip" component={Grip} />
         </Switch>
