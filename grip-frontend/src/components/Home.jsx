@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import './Home.css'
 import { Link } from "react-router-dom";
-
+import '../assets/qr-code.png';
+import CountUp from "react-countup";
+import VisibilitySensor from 'react-visibility-sensor';
 
 export default function Home() {
+    const [focus, setFocus] = useState(false);
 
     const [tileInfos] = useState([
         { id: 1, heading: "Unpaid Internship", content: "This is an unpaid internship of a month during which you'll be trained, mentored and observerd for future role." },
@@ -75,6 +78,75 @@ export default function Home() {
                 })}
 
             </div>
+
+            <div className="counter-section">
+                <div className="join-us">
+                    <div className="overlay-text">
+                        <h3>Come Join the Community now!</h3>
+                        <br />
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus sapiente facilis quia deserunt rem molestiae impedit perspiciatis vero harum error. Blanditiis atque quisquam soluta minima itaque porro tempore nisi mollitia?</p>
+                    </div>
+
+                </div>
+                <div className="counter">
+                    <div className="counter-whole">
+                        <div className="counter-item">
+                            <div className="item-left">
+                                <h4>Number of <br />Students</h4>
+                                <CountUp start={focus ? 0 : null} end={300000} duration={4} suffix="+">
+                                    {({ countUpRef }) => (
+                                        <VisibilitySensor onChange={(isVisible) => {
+                                            if (isVisible) { setFocus(true); }
+                                        }} delayedCall>
+                                            <span ref={countUpRef} />
+                                        </VisibilitySensor>
+                                    )}
+                                </CountUp>
+                            </div>
+                            <div className="item-right">
+                                <h4>Number of <br />Countries</h4>
+                                <CountUp start={focus ? 0 : null} end={100} duration={4} suffix="+">
+                                    {({ countUpRef }) => (
+                                        <VisibilitySensor onChange={(isVisible) => {
+                                            if (isVisible) { setFocus(true); }
+                                        }} delayedCall>
+                                            <span ref={countUpRef} />
+                                        </VisibilitySensor>
+                                    )}
+                                </CountUp>
+                            </div>
+                        </div>
+                        <div className="counter-item">
+                            <div className="item-left">
+                                <h4>Mentors<br /> Involved</h4>
+                                <CountUp start={focus ? 0 : null} end={75} duration={4} suffix="+">
+                                    {({ countUpRef }) => (
+                                        <VisibilitySensor onChange={(isVisible) => {
+                                            if (isVisible) { setFocus(true); }
+                                        }} delayedCall>
+                                            <span ref={countUpRef} />
+                                        </VisibilitySensor>
+                                    )}
+                                </CountUp>
+                            </div>
+                            <div className="item-right">
+                                <h4>Number of <br />Students</h4>
+                                <CountUp start={focus ? 0 : null} end={3000} duration={4} suffix="+">
+                                    {({ countUpRef }) => (
+                                        <VisibilitySensor onChange={(isVisible) => {
+                                            if (isVisible) { setFocus(true); }
+                                        }} delayedCall>
+                                            <span ref={countUpRef} />
+                                        </VisibilitySensor>
+                                    )}
+                                </CountUp>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
 
         </div>
     )

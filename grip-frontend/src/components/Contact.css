@@ -22,6 +22,33 @@
     border-radius: 10px;
 }
 
+.location-info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.location-info .map {
+    padding: 2rem;
+    width: 100%;
+}
+
+.location-info .qr-code {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-info .qr-code img {
+    width: 250px;
+    height: 250px;
+}
+
+
+/* ---------------------------------------Interest Form--------------------------------------- */
+
 .interest-form {
     margin: 2rem 0;
     padding: 2rem;
@@ -29,11 +56,9 @@
     border-radius: 10px;
 }
 
-
-/* ---------------------------------------Interest Form--------------------------------------- */
-
 .title {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .submit-button {
@@ -59,7 +84,12 @@
 /* ---------------------------------------Media Queries--------------------------------------- */
 
 @media (max-width: 800px) {
-    .contact-info {
+    .contact-info,
+    .location-info {
         flex-direction: column;
+    }
+    .location-info iframe {
+        width: -webkit-fill-available;
+        margin: auto;
     }
 }

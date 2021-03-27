@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { CountryDropdown } from 'react-country-region-selector';
 import axios from 'axios';
 import './Contact.css'
-
+import qrcode from '../assets/qr-code.png';
 
 export default function Contact() {
 
@@ -71,6 +71,19 @@ export default function Contact() {
 
             </div>
 
+            <div className="location-info">
+
+                <div className="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d510566.84086451854!2d103.775766!3d1.29234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xff68dba930304ddb!2sWattah%20Pte%20Ltd!5e0!3m2!1sen!2ssg!4v1616756251427!5m2!1sen!2ssg" width="500" height="350" style={{ border: "0" }} allowfullscreen="" loading="lazy" title="mymap"></iframe>
+                </div>
+                <div className="qr-code">
+                    <img src={qrcode} alt="" />
+                </div>
+
+            </div>
+
+
+
             <div className="interest-form">
 
                 <div className="title">
@@ -130,7 +143,17 @@ export default function Contact() {
                     </div>
 
                     <div className="form-group">
-                        <input type="text" name="internship" className="form-control" placeholder="Preferred Internship Function" onChange={event => onChangeHandler(event)} />
+                        <select name="internship" class="form-control" value={internship} onChange={event => onChangeHandler(event)}>
+                            <option value="" disabled selected>Select Internship type</option>
+                            <option value="Web development">Web development</option>
+                            <option value="Mobile Development">Mobile Development</option>
+                            <option value="Data Analytics">Data Analytics</option>
+                            <option value="Content Development">Content Development</option>
+                            <option value="Campus Ambassador">Campus Ambassador</option>
+                            <option value="Digital Marketing">Digital Marketing</option>
+                            <option value="Talent Acquisition">Talent Acquisition</option>
+                            <option value="IOT/Computer Vision">IOT/Computer Vision</option>
+                        </select>
                     </div>
 
                     <div className="submit-button">

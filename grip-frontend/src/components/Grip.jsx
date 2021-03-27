@@ -22,9 +22,9 @@ export default function Grip() {
     ])
 
     return (
-        <div className="container">
+        <div >
 
-            <div className="grip-info-top">
+            <div className="grip-info-top container">
 
                 <div className="grip-info-top-heading">
                     <h2>Why join GRIP?</h2>
@@ -69,7 +69,7 @@ export default function Grip() {
 
             </div>
 
-            <div className="Internships">
+            <div className="Internships container">
 
                 <div className="Internships-heading">
                     <h2>Internships Available</h2>
@@ -106,11 +106,11 @@ export default function Grip() {
 
             </div>
 
-            <div className="timeline-heading">
+            <div className="timeline-heading container">
                 <h2>GRIP Timeline</h2>
             </div>
 
-            <div class="timeline-area">
+            <div class="timeline-area container">
                 <div class="container1">
                     <div class="all-timelines">
 
@@ -213,12 +213,13 @@ export default function Grip() {
 
             </div>
 
-            <div className="FAQ-docs">
+            <div className="FAQ-docs container">
 
                 <h4>Read FAQ Documents for any Queries</h4>
                 <a href="https://docs.google.com/document/d/1EUo3Vly4C9ym6OW8tjJsbMzJUnBoFXwuSh-Pit9vNso/edit?usp=sharing"><button className="FAQ-docs-btn">FAQ Documents</button></a>
 
             </div>
+
 
         </div>
     )

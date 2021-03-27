@@ -31,7 +31,7 @@ export default function Footer() {
 
             </div>
 
-            <p className="text">© 2021 The Sparks Foundation | GRIP </p>
+            <p className="text">© 2021 The Sparks Foundation | GRIP | made by Harsh Mauny </p>
 
         </footer>
     )

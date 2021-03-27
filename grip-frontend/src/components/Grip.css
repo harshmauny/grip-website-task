@@ -71,10 +71,6 @@ a {
     display: inline-block;
 }
 
-img {
-    max-width: 100%;
-}
-
 button:focus {
     outline: none;
 }
@@ -207,7 +203,8 @@ p {
 
 .FAQ-docs {
     text-align: center;
-    margin: 2rem 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem
 }
 
 .FAQ-docs-btn {
