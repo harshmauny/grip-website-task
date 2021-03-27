@@ -110,14 +110,14 @@ export default function Grip() {
                 <h2>GRIP Timeline</h2>
             </div>
 
-            <div class="timeline-area container">
-                <div class="container1">
-                    <div class="all-timelines">
+            <div className="timeline-area container">
+                <div className="container1">
+                    <div className="all-timelines">
 
                         {/* <!--SINGLE TIMELINE--> */}
-                        <div class="single-timeline d-flex-2">
-                            <div class="timeline-blank"></div>
-                            <div class="timeline-text d-flex-2">
+                        <div className="single-timeline d-flex-2">
+                            <div className="timeline-blank"></div>
+                            <div className="timeline-text d-flex-2">
                                 <span>
                                     <h6>Application</h6>
                                     <ul>
@@ -125,14 +125,14 @@ export default function Grip() {
                                         <li>All applicants must fill the interest From and create a profile on My credible info before deadline.</li>
                                     </ul>
                                 </span>
-                                <div class="t-square"></div>
+                                <div className="t-square"></div>
                             </div>
                         </div>
 
                         {/* <!--SINGLE TIMELINE--> */}
-                        <div class="single-timeline d-flex-2">
-                            <div class="timeline-blank"></div>
-                            <div class="timeline-text d-flex-2">
+                        <div className="single-timeline d-flex-2">
+                            <div className="timeline-blank"></div>
+                            <div className="timeline-text d-flex-2">
                                 <span>
                                     <h6>GRIP Selection Certificate </h6>
                                     <ul>
@@ -141,14 +141,14 @@ export default function Grip() {
                                         <li>Selection certificate are sent in the last week of each month for the next batch in upcoming month.</li>
                                     </ul>
                                 </span>
-                                <div class="t-square"></div>
+                                <div className="t-square"></div>
                             </div>
                         </div>
 
                         {/* <!--SINGLE TIMELINE--> */}
-                        <div class="single-timeline d-flex-2">
-                            <div class="timeline-blank"></div>
-                            <div class="timeline-text d-flex-2">
+                        <div className="single-timeline d-flex-2">
+                            <div className="timeline-blank"></div>
+                            <div className="timeline-text d-flex-2">
                                 <span>
                                     <h6>Internship Starts - 1<sup>st</sup> week of the month</h6>
                                     <ul>
@@ -157,14 +157,14 @@ export default function Grip() {
                                         <li>All announcements and your queries will be answered via TSF Network group</li>
                                     </ul>
                                 </span>
-                                <div class="t-square"></div>
+                                <div className="t-square"></div>
                             </div>
                         </div>
 
                         {/* <!--SINGLE TIMELINE--> */}
-                        <div class="single-timeline d-flex-2">
-                            <div class="timeline-blank"></div>
-                            <div class="timeline-text d-flex-2">
+                        <div className="single-timeline d-flex-2">
+                            <div className="timeline-blank"></div>
+                            <div className="timeline-text d-flex-2">
                                 <span>
                                     <h6>Task Submission & Peer Evaluation</h6>
                                     <ul>
@@ -173,14 +173,14 @@ export default function Grip() {
                                         <li><b>Deadline:</b> 23:59(SGT) 21<sup>st</sup> day of your batch/month</li>
                                     </ul>
                                 </span>
-                                <div class="t-square"></div>
+                                <div className="t-square"></div>
                             </div>
                         </div>
 
                         {/* <!--SINGLE TIMELINE--> */}
-                        <div class="single-timeline d-flex-2">
-                            <div class="timeline-blank"></div>
-                            <div class="timeline-text d-flex-2">
+                        <div className="single-timeline d-flex-2">
+                            <div className="timeline-blank"></div>
+                            <div className="timeline-text d-flex-2">
                                 <span>
                                     <h6>GRIP Session Feedback</h6>
                                     <ul>
@@ -189,14 +189,14 @@ export default function Grip() {
                                         <li>Email in Session Feedback form must match with email in task Submission form.</li>
                                     </ul>
                                 </span>
-                                <div class="t-square"></div>
+                                <div className="t-square"></div>
                             </div>
                         </div>
 
                         {/* <!--SINGLE TIMELINE--> */}
-                        <div class="single-timeline d-flex-2">
-                            <div class="timeline-blank"></div>
-                            <div class="timeline-text d-flex-2">
+                        <div className="single-timeline d-flex-2">
+                            <div className="timeline-blank"></div>
+                            <div className="timeline-text d-flex-2">
                                 <span>
                                     <h6>Completion Certificate</h6>
                                     <ul>
@@ -204,7 +204,7 @@ export default function Grip() {
                                         <li>If you miss any deadline or make mistake in submitting details, your certificate issuance will be with next batch provided you correctly fill the details again</li>
                                     </ul>
                                 </span>
-                                <div class="t-square"></div>
+                                <div className="t-square"></div>
                             </div>
                         </div>
 
@@ -220,6 +220,50 @@ export default function Grip() {
 
             </div>
 
+            <div className="student-review container" >
+                <h2>Student reviews</h2>
+            </div>
+            <div id="review-list" className="container">
+                <section>
+                    <div class="top-box"></div>
+                    <img src="https://images.pexels.com/photos/1056475/pexels-photo-1056475.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Picture of Vivian Williams" />
+                    <div class="bottom-box">
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                        </blockquote>
+                        <div class="test-details">
+                            <p><span>Vivian Williams</span><br />Los Angeles, CA</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="top-box"></div>
+                    <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Picture of Josie Anderson" />
+                    <div class="bottom-box">
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                        </blockquote>
+                        <div class="test-details">
+                            <p><span>Josie Anderson</span><br />Raleigh, NC</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="top-box"></div>
+                    <img src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Picture of Jenny Smith" />
+                    <div class="bottom-box">
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                        </blockquote>
+                        <div class="test-details">
+                            <p><span>Jenny Smith</span><br />Boise, ID</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
 
         </div>
     )

@@ -2,7 +2,8 @@
 
 .timeline-heading,
 .grip-info-top-heading,
-.Internships-heading {
+.Internships-heading,
+.student-review {
     text-align: center;
     margin-top: 4rem;
 }
@@ -221,6 +222,81 @@ p {
     border: 2px solid #04BDC9;
     background-color: #04BDC9;
     color: white;
+}
+
+
+/* ---------------------------------------student review------------------------------------------------ */
+
+#review-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5rem auto;
+    width: 75%;
+    max-width: 1200px;
+}
+
+#review-list section {
+    margin-bottom: 50px;
+    width: 264px;
+}
+
+.top-box {
+    background-color: #04BDC9;
+    width: 263px;
+    height: 103px;
+    position: absolute;
+    z-index: 1;
+    border-top-right-radius: 1rem;
+}
+
+section img {
+    background-color: gray;
+    border-radius: 100%;
+    border: 3px soild #D4D4D4;
+    width: 133px;
+    height: 133px;
+    object-fit: cover;
+    position: relative;
+    display: block;
+    margin: auto;
+    top: 15px;
+    z-index: 5;
+}
+
+section .bottom-box {
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+    width: 263px;
+    transform: translateY(-50px);
+    border-bottom-left-radius: 1rem;
+}
+
+.bottom-box blockquote {
+    margin: 1rem auto;
+    padding: 0;
+    width: 210px;
+    text-align: center;
+}
+
+.bottom-box blockquote p {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 21px;
+    padding-top: 4rem;
+}
+
+.test-details {
+    text-align: center;
+}
+
+.test-details span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.test-details p {
+    padding: 1rem 0;
 }
 
 

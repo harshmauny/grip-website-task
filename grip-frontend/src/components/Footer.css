@@ -1,4 +1,4 @@
-footer {
+footer.grip-footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +16,7 @@ footer {
 
 .text {
     color: #777;
+    text-align: center;
 }
 
 .icons {

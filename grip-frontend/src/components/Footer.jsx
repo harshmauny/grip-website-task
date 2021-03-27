@@ -3,7 +3,7 @@ import './Footer.css';
 
 export default function Footer() {
     return (
-        <footer>
+        <footer className="grip-footer">
 
             <div className="social">
 
@@ -31,7 +31,7 @@ export default function Footer() {
 
             </div>
 
-            <p className="text">© 2021 The Sparks Foundation | GRIP | made by Harsh Mauny </p>
+            <p className="text">© 2021 The Sparks Foundation | GRIP <br />made by Harsh Mauny </p>
 
         </footer>
     )

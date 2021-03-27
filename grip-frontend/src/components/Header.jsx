@@ -5,7 +5,6 @@ import logo from '../assets/Logo.png';
 import './Header.css';
 
 const Nav = styled.nav`
-  
   padding: 0 20px;
   height: 6rem;
   min-height: 9vh;
@@ -13,7 +12,7 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px;
+  margin: 0;
   width:100%;
   box-shadow: 0 8px 6px -6px #999;
 `;

@@ -71,19 +71,6 @@ export default function Contact() {
 
             </div>
 
-            <div className="location-info">
-
-                <div className="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d510566.84086451854!2d103.775766!3d1.29234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xff68dba930304ddb!2sWattah%20Pte%20Ltd!5e0!3m2!1sen!2ssg!4v1616756251427!5m2!1sen!2ssg" width="500" height="350" style={{ border: "0" }} allowfullscreen="" loading="lazy" title="mymap"></iframe>
-                </div>
-                <div className="qr-code">
-                    <img src={qrcode} alt="" />
-                </div>
-
-            </div>
-
-
-
             <div className="interest-form">
 
                 <div className="title">
@@ -163,6 +150,17 @@ export default function Contact() {
                 </form>
                 {<><p style={{ color: 'red', fontWeight: '800', marginTop: "1rem" }}>{error}</p></>}
                 {<><p style={{ color: 'green', fontWeight: '800', marginTop: "1rem" }}>{success}</p></>}
+
+            </div>
+
+            <div className="location-info">
+
+                <div className="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d510566.84086451854!2d103.775766!3d1.29234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xff68dba930304ddb!2sWattah%20Pte%20Ltd!5e0!3m2!1sen!2ssg!4v1616756251427!5m2!1sen!2ssg" width="500" height="350" style={{ border: "0" }} allowfullscreen="" loading="lazy" title="mymap"></iframe>
+                </div>
+                <div className="qr-code">
+                    <img src={qrcode} alt="" />
+                </div>
 
             </div>
 
