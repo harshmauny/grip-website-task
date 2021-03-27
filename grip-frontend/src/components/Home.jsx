@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Home.css'
 import { Link } from "react-router-dom";
-import '../assets/qr-code.png';
 import CountUp from "react-countup";
 import VisibilitySensor from 'react-visibility-sensor';
 
