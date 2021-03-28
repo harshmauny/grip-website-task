@@ -3,6 +3,11 @@ import './Home.css'
 import { Link } from "react-router-dom";
 import CountUp from "react-countup";
 import VisibilitySensor from 'react-visibility-sensor';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import internship from '../assets/internship.jpg';
+import mentorship from '../assets/mentorship.jpg';
+import community from '../assets/community.jpg';
 
 export default function Home() {
     const [focus, setFocus] = useState(false);
@@ -15,6 +20,78 @@ export default function Home() {
 
     return (
         <div >
+            <Carousel
+                additionalTransfrom={0}
+                autoPlaySpeed={3000}
+                centerMode={false}
+                className=""
+                dotListClass=""
+                draggable
+                focusOnSelect={false}
+                infinite
+                itemClass=""
+                keyBoardControl
+                minimumTouchDrag={80}
+                renderButtonGroupOutside={false}
+                renderDotsOutside={false}
+                responsive={{
+                    desktop: {
+                        breakpoint: {
+                            max: 3000,
+                            min: 1024
+                        },
+                        items: 1
+                    },
+                    mobile: {
+                        breakpoint: {
+                            max: 464,
+                            min: 0
+                        },
+                        items: 1
+                    },
+                    tablet: {
+                        breakpoint: {
+                            max: 1024,
+                            min: 464
+                        },
+                        items: 1
+                    }
+                }}
+                showDots
+                sliderClass=""
+                slidesToSlide={1}
+                swipeable
+            >
+
+                <div className="my-gallery" style={{ backgroundImage: "url(" + internship + ")" }}>
+                    <div class="d-flex align-items-center justify-content-center min-vh-100">
+                        <div className="gallery-text">
+                            <h2>Internships</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eos quas modi consequatur suscipit dolor itaque molestiae? Quae rerum, ducimus, omnis incidunt, fuga vel molestias excepturi et quasi saepe iure!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="my-gallery" style={{ backgroundImage: "url(" + mentorship + ")" }}>
+                    <div class="d-flex align-items-center justify-content-center min-vh-100">
+                        <div className="gallery-text">
+                            <h2>Mentorship</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eos quas modi consequatur suscipit dolor itaque molestiae? Quae rerum, ducimus, omnis incidunt, fuga vel molestias excepturi et quasi saepe iure!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="my-gallery" style={{ backgroundImage: "url(" + community + ")" }}>
+                    <div class="d-flex align-items-center justify-content-center min-vh-100">
+                        <div className="gallery-text">
+                            <h2>Community</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eos quas modi consequatur suscipit dolor itaque molestiae? Quae rerum, ducimus, omnis incidunt, fuga vel molestias excepturi et quasi saepe iure!</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </Carousel>
             <div className="TSF-info container">
 
                 <div className="video">

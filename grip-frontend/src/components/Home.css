@@ -1,3 +1,19 @@
+.my-gallery {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 87.2vh;
+}
+
+.gallery-text {
+    color: white;
+    margin: 4rem auto;
+    width: 65%;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 2rem;
+}
+
+
 /* ------------------------------------TSF-Info------------------------------------ */
 
 .TSF-info {
