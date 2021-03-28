@@ -74,7 +74,7 @@ const Line = styled.span`
 `;
 
 const Overlay = styled.div`
-  z-index:100;
+  z-index:2000;
   position: absolute;
   height: ${props => (props.open ? "91vh" : 0)};
   width: 100%;
