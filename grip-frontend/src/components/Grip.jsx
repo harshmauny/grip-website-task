@@ -14,7 +14,7 @@ export default function Grip() {
     ])
 
     const [guidance] = useState([
-        { id: 1, heading: "Sheduled Calls", context: "Regular contact with core team members via live online sessions." },
+        { id: 1, heading: "Scheduled Calls", context: "Regular contact with core team members via live online sessions." },
         { id: 2, heading: "Mentor Support", context: "Our mentors are there to guide and support at any time. You can reach the mentors through email or whatsapp." },
         { id: 3, heading: "Discussion Forum", context: "You will be asked to join The Sparks Foundation Network group on LinkedIn. Here, Your mentors and facilitators will answer your task queries." },
         { id: 4, heading: "On Demand Support", context: "If you feel the need, you can mail us for help. We will guide you to correct resources." },
@@ -23,6 +23,9 @@ export default function Grip() {
 
     return (
         <div >
+            <div className="grip-page-heading">
+                <h1>GRIP</h1>
+            </div>
 
             <div className="grip-info-top container">
 
@@ -69,40 +72,44 @@ export default function Grip() {
 
             </div>
 
-            <div className="Internships container">
+            <div className="Internships">
 
-                <div className="Internships-heading">
+                <div className="Internships-heading container">
                     <h2>Internships Available</h2>
+                    <br />
+                    <h6>GRIP Program allows you to select from a range of various Internships. click on the tiles below to know more about each one of them</h6>
+                </div>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-3">
+                            <a href="https://docs.google.com/document/d/1QmqPQVjTAlLL18nZBU5Mx7lqh0yF1jnvQKJXOWSct30/edit?usp=sharing"><button className="Internships-btn">Web Development</button></a>
+                        </div>
+                        <div className="col-md-3">
+                            <a href="https://docs.google.com/document/d/12lAGdYmBnIhNBCfJAI9gEGyfh_KJVTjTa7HOH1kllyI/edit"> <button className="Internships-btn">Mobile Development</button></a>
+                        </div>
+                        <div className="col-md-3">
+                            <a href="https://docs.google.com/document/d/1Vh_3Kf7xJsSiElv6dbvDpGs-Ckksm82HukFzxGxtamE/edit"><button className="Internships-btn">Data Analytics</button></a>
+                        </div>
+                        <div className="col-md-3">
+                            <a href="https://docs.google.com/document/d/1dPWPAf9DrWwegukrgRBhgII_2W3it0tciWlBy2etGec/edit"><button className="Internships-btn">Content Development</button></a>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-3">
+                            <a href="https://docs.google.com/document/d/1lxUIRSaYf-ATS3EhfeMkLciUXMTyRD1gmIu8mWiram4/edit"><button className="Internships-btn">Campus Ambassador</button></a>
+                        </div>
+                        <div className="col-md-3">
+                            <a href="https://docs.google.com/document/d/1ptZ0II8Ned904C2vxvfv7A2VZcqYH8fU84uPvNYAebM/edit"><button className="Internships-btn">Digital Marketing</button></a>
+                        </div>
+                        <div className="col-md-3">
+                            <a href="https://docs.google.com/document/d/18GvNuiZXI_rRlvSDlWXM6fFclnbkSN4tegV36mIKErM/edit"> <button className="Internships-btn">Talent Acquisition</button></a>
+                        </div>
+                        <div className="col-md-3">
+                            <a href="https://docs.google.com/document/d/1aOIDcNi7PXBgPwl8E0RGS_s2unemS5ZWx8-clzrksGI/edit"><button className="Internships-btn">IOT/computer Vision </button></a>
+                        </div>
+                    </div>
                 </div>
 
-                <div className="row">
-                    <div className="col-md-3">
-                        <a href="https://docs.google.com/document/d/1QmqPQVjTAlLL18nZBU5Mx7lqh0yF1jnvQKJXOWSct30/edit?usp=sharing"><button className="Internships-btn">Web Development</button></a>
-                    </div>
-                    <div className="col-md-3">
-                        <a href="https://docs.google.com/document/d/12lAGdYmBnIhNBCfJAI9gEGyfh_KJVTjTa7HOH1kllyI/edit"> <button className="Internships-btn">Mobile Development</button></a>
-                    </div>
-                    <div className="col-md-3">
-                        <a href="https://docs.google.com/document/d/1Vh_3Kf7xJsSiElv6dbvDpGs-Ckksm82HukFzxGxtamE/edit"><button className="Internships-btn">Data Analytics</button></a>
-                    </div>
-                    <div className="col-md-3">
-                        <a href="https://docs.google.com/document/d/1dPWPAf9DrWwegukrgRBhgII_2W3it0tciWlBy2etGec/edit"><button className="Internships-btn">Content Development</button></a>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-3">
-                        <a href="https://docs.google.com/document/d/1lxUIRSaYf-ATS3EhfeMkLciUXMTyRD1gmIu8mWiram4/edit"><button className="Internships-btn">Campus Ambassador</button></a>
-                    </div>
-                    <div className="col-md-3">
-                        <a href="https://docs.google.com/document/d/1ptZ0II8Ned904C2vxvfv7A2VZcqYH8fU84uPvNYAebM/edit"><button className="Internships-btn">Digital Marketing</button></a>
-                    </div>
-                    <div className="col-md-3">
-                        <a href="https://docs.google.com/document/d/18GvNuiZXI_rRlvSDlWXM6fFclnbkSN4tegV36mIKErM/edit"> <button className="Internships-btn">Talent Acquisition</button></a>
-                    </div>
-                    <div className="col-md-3">
-                        <a href="https://docs.google.com/document/d/1aOIDcNi7PXBgPwl8E0RGS_s2unemS5ZWx8-clzrksGI/edit"><button className="Internships-btn">IOT/computer Vision </button></a>
-                    </div>
-                </div>
 
             </div>
 
@@ -122,7 +129,7 @@ export default function Grip() {
                                     <h6>Application</h6>
                                     <ul>
                                         <li>You can apply for GRIP from either LinkedIn or a job portal like internshala or indeed.</li>
-                                        <li>All applicants must fill the interest From and create a profile on My credible info before deadline.</li>
+                                        <li>All applicants must fill the <a href="https://docs.google.com/forms/d/e/1FAIpQLScTmzfiKkbfS2yjmabn3XczfaEVYnw4xgO5NfThPebxZnlc8Q/viewform?entry.941892130=LF06">interest form</a>  and create a profile on My credible info before deadline.</li>
                                     </ul>
                                 </span>
                                 <div className="t-square"></div>

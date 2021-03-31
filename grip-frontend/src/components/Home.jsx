@@ -66,8 +66,8 @@ export default function Home() {
                 <div className="my-gallery" style={{ backgroundImage: "url(" + internship + ")" }}>
                     <div class="d-flex align-items-center justify-content-center min-vh-100">
                         <div className="gallery-text">
-                            <h2>Internships</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eos quas modi consequatur suscipit dolor itaque molestiae? Quae rerum, ducimus, omnis incidunt, fuga vel molestias excepturi et quasi saepe iure!</p>
+                            <h1>Internships</h1>
+                            <h6>We Conduct Internship Program To Help Students Be Ready For What Is Coming To Them In Their Career Ahead. To Know More About The GRIP Program, Scroll Down.</h6>
                         </div>
                     </div>
                 </div>
@@ -75,8 +75,8 @@ export default function Home() {
                 <div className="my-gallery" style={{ backgroundImage: "url(" + mentorship + ")" }}>
                     <div class="d-flex align-items-center justify-content-center min-vh-100">
                         <div className="gallery-text">
-                            <h2>Mentorship</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eos quas modi consequatur suscipit dolor itaque molestiae? Quae rerum, ducimus, omnis incidunt, fuga vel molestias excepturi et quasi saepe iure!</p>
+                            <h1>Mentorship</h1>
+                            <h6>We Help Students And Enable Them To Move Forward, Get Unstuck From Any Unfavorable Situation. We Keep An Alternative Channel Open Always To Help Them, When School And People Around Are Not Enough.</h6>
                         </div>
                     </div>
                 </div>
@@ -84,8 +84,8 @@ export default function Home() {
                 <div className="my-gallery" style={{ backgroundImage: "url(" + community + ")" }}>
                     <div class="d-flex align-items-center justify-content-center min-vh-100">
                         <div className="gallery-text">
-                            <h2>Community</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eos quas modi consequatur suscipit dolor itaque molestiae? Quae rerum, ducimus, omnis incidunt, fuga vel molestias excepturi et quasi saepe iure!</p>
+                            <h1>Community</h1>
+                            <h6>We Have Built A Community Of Sharing Knowledge, Helping Each Other. We Encourage Asking For Help, And Let Inner Desire Drive Students To Success.</h6>
                         </div>
                     </div>
                 </div>
@@ -131,12 +131,12 @@ export default function Home() {
 
             </div>
 
-            <div className="extra-info-top container">
+            {/* <div className="extra-info-top container">
                 <h4>virtual Internship</h4>
                 <h4>unpaid</h4>
                 <h4>flexible</h4>
                 <h4>5-6 hours per week</h4>
-            </div>
+            </div> */}
 
             <div className="extra-info-tiles container">
 
@@ -158,9 +158,13 @@ export default function Home() {
             <div className="counter-section">
                 <div className="join-us">
                     <div className="overlay-text">
-                        <h3>Come Join the Community now!</h3>
+                        <h3>Come Join the <span style={{ color: "#04BDC9" }}>Community </span>now! </h3>
                         <br />
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus sapiente facilis quia deserunt rem molestiae impedit perspiciatis vero harum error. Blanditiis atque quisquam soluta minima itaque porro tempore nisi mollitia?</p>
+                        <p>Join The GRIP program now as an intern and unleash your potential. </p>
+                        <p>Interested in the GRIP program? Fill out the interest form now!</p>
+                        <div style={{ textAlign: "center" }}>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScTmzfiKkbfS2yjmabn3XczfaEVYnw4xgO5NfThPebxZnlc8Q/viewform?entry.941892130=LF06" target="_blank"><button className="interest-form-btn">Interest Form</button></a>
+                        </div>
                     </div>
 
                 </div>
@@ -206,8 +210,8 @@ export default function Home() {
                                 </CountUp>
                             </div>
                             <div className="item-right">
-                                <h4>Number of <br />Students</h4>
-                                <CountUp start={focus ? 0 : null} end={3000} duration={4} suffix="+">
+                                <h4>Internships<br />offered</h4>
+                                <CountUp start={focus ? 0 : null} end={8} duration={4} suffix="+">
                                     {({ countUpRef }) => (
                                         <VisibilitySensor onChange={(isVisible) => {
                                             if (isVisible) { setFocus(true); }

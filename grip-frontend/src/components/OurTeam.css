@@ -1,6 +1,8 @@
 .our-team-heading {
     text-align: center;
-    margin: 2rem 0;
+    padding: 4rem 0;
+    background-color: #1c2022;
+    color: #fff;
 }
 
 .team-card {

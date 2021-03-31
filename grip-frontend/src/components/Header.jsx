@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from '../assets/Logo.png';
 import './Header.css';
-
+// #1c2022
 const Nav = styled.nav`
   padding: 0 20px;
-  height: 6rem;
+  height: 13vh;
   min-height: 9vh;
   background: #1c2022;
   display: flex;
@@ -14,7 +14,11 @@ const Nav = styled.nav`
   align-items: center;
   margin: 0;
   width:100%;
-  box-shadow: 0 8px 6px -6px #999;
+  // box-shadow: 0 8px 6px -6px #999;
+
+  @media (max-width: 768px){
+    height:13vh;
+  }
 `;
 
 const Logo = styled.h1`
@@ -36,16 +40,37 @@ const Menu = styled.ul`
   }
 `;
 
-const Item = styled.li``;
+const Item = styled.li`
+
+`;
 
 const SLink = styled.a`
   color: white;
   text-decoration: none;
+  position: relative;
 
+  :before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #767676;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
   :hover {
     text-decoration: none;
     color: #767676;
   }
+
+  :hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+  
 `;
 
 const NavIcon = styled.button`
@@ -76,6 +101,7 @@ const Line = styled.span`
 const Overlay = styled.div`
   z-index:2000;
   position: absolute;
+  
   height: ${props => (props.open ? "91vh" : 0)};
   width: 100%;
   background: #1c2022;

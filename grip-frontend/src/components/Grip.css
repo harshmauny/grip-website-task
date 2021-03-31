@@ -1,8 +1,15 @@
+.grip-page-heading {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #1c2022;
+    color: #fff;
+}
+
+
 /* -------------------------------------Grip-info(benefits and guidance)------------------------------------- */
 
 .timeline-heading,
 .grip-info-top-heading,
-.Internships-heading,
 .student-review {
     text-align: center;
     margin-top: 4rem;
@@ -49,6 +56,16 @@
 
 
 /* -------------------------------------Internships-tiles------------------------------------- */
+
+.Internships {
+    background-color: #ececec;
+    padding: 4rem 0;
+    margin: 4rem 0;
+}
+
+.Internships-heading {
+    text-align: center;
+}
 
 .Internships-btn {
     margin-top: 1rem;
