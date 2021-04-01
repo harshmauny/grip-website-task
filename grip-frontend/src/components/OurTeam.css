@@ -43,6 +43,10 @@
     height: 160px;
 }
 
+.media-handles i {
+    margin-right: 0.5rem;
+}
+
 @media all and (max-width: 768px) {
     .team-card {
         flex-direction: column-reverse;
