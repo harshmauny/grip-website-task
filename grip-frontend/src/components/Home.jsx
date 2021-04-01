@@ -92,6 +92,9 @@ export default function Home() {
 
 
             </Carousel>
+            {/* <div class="arrow bounce">
+                <a class="fa fa-arrow-down fa-2x" ></a>
+            </div> */}
             <div className="TSF-info container">
 
                 <div className="video">
@@ -131,15 +134,9 @@ export default function Home() {
 
             </div>
 
-            {/* <div className="extra-info-top container">
-                <h4>virtual Internship</h4>
-                <h4>unpaid</h4>
-                <h4>flexible</h4>
-                <h4>5-6 hours per week</h4>
-            </div> */}
+            <h2 className="extra-info-heading container">Features of GRIP Program</h2>
 
             <div className="extra-info-tiles container">
-
                 {tileInfos.map((tileInfo) => {
                     return (
                         <div className="tile" key={tileInfo.id}>

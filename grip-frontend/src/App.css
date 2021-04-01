@@ -2,3 +2,13 @@
 .App {
     font-family: 'Poppins', sans-serif;
 }
+
+df-messenger {
+    z-index: 1500;
+    --df-messenger-bot-message: #878fac;
+    --df-messenger-button-titlebar-color: #04BDC9;
+    --df-messenger-chat-background-color: #fafafa;
+    --df-messenger-font-color: white;
+    --df-messenger-send-icon: #878fac;
+    --df-messenger-user-message: #FFB600;
+}

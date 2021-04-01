@@ -15,6 +15,13 @@ function App() {
     <Router>
       <div className="App">
         <Header />
+        <df-messenger
+          chat-icon="https://tsf-grip.web.app/static/media/Logo.c97a7b25.png"
+          intent="WELCOME"
+          chat-title="TSF-GRIP-assistant"
+          agent-id="3be430dc-7b6b-4c9d-a4de-d8282edb7f95"
+          language-code="en"
+        ></df-messenger>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/ourteam" component={OurTeam} />

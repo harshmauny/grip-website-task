@@ -13,7 +13,7 @@ export default function OurTeam() {
     return (
         <div >
             <div className="our-team-heading">
-                <h2>Meet Our <span style={{ color: "#04BDC9" }}>Team</span>  !</h2>
+                <h1>Meet Our <span style={{ color: "#04BDC9" }}>Team</span>  !</h1>
             </div>
             <div className="container">
                 {teamDetails.map((teamdetail) => {
