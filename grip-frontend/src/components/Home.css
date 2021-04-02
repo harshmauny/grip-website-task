@@ -307,6 +307,9 @@
     .content-box h5 {
         font-size: 17px;
     }
+    .extra-info-heading {
+        margin-top: 4rem;
+    }
     .extra-info-tiles {
         flex-direction: column;
         margin: 4rem auto;
